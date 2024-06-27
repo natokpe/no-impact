@@ -1,0 +1,35 @@
+@use 'variables' as *;
+
+@use "wp_header_comment";
+
+// @charset "UTF-8";
+
+@use "bootstrap/scss/bootstrap.scss" with (
+    // $body-bg:            $color-body-bg,
+    $primary:            $color-primary,
+    $breadcrumb-divider: quote("/"),
+    $grid-gutter-width:  2.31rem, // default 1.5
+);
+
+@use "flag-icons/sass/flag-icons.scss" with (
+    $flag-icons-path:        "./assets/img/flag-icons",
+    $flag-icons-rect-path:   "/4x3",
+    $flag-icons-square-path: "/1x1",
+    $flag-icons-use-square:  true
+);
+
+// @use 'swiper/swiper-bundle.css';
+// @use 'swiper/modules/effect-fade.scss';
+// @use 'swiper/modules/pagination.scss';
+// @use 'swiper/modules/autoplay.scss';
+// @use 'swiper/modules/navigation.scss';
+
+@use "fonts";
+@use "feather-icons";
+@use "content-frame";
+@use "nav";
+@use "buttons";
+@use "forms";
+@use "hero-banner";
+@use "common";
+@use "footer";

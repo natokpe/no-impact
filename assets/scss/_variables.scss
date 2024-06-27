@@ -1,0 +1,106 @@
+@use "sass:list";
+@use "sass:math";
+
+$border-radius: 1px;
+
+// $color-link: #3366ff;
+$color-link: #296eb4;
+$color-primary: #a51080;
+$color-primary-light: #e4cee3;
+$color-secondary: #360b74;
+$color-accent-1: #a51052;
+$color-accent-2: #740b74;
+$color-accent-3: #4f10a5; // $accent-3-light rgb(224,219,243)
+$color-body-bg: #f4f7fe;
+$color-white: #fff;
+$color-black: #000;
+
+// rgb(249, 250, 251)
+
+$font-family-body:    "Roboto", sans-serif;
+$font-family-heading: "Roboto Bold", sans-serif;
+
+$font-size-number: 14;
+
+$font-size:    $font-size-number + px;
+$font-size-10: math.div(10, $font-size-number) + rem;
+$font-size-11: math.div(11, $font-size-number) + rem;
+$font-size-12: math.div(12, $font-size-number) + rem;
+$font-size-13: math.div(13, $font-size-number) + rem;
+$font-size-14: math.div(14, $font-size-number) + rem;
+$font-size-15: math.div(15, $font-size-number) + rem;
+$font-size-16: math.div(16, $font-size-number) + rem;
+$font-size-17: math.div(17, $font-size-number) + rem;
+$font-size-18: math.div(18, $font-size-number) + rem;
+$font-size-19: math.div(19, $font-size-number) + rem;
+$font-size-20: math.div(20, $font-size-number) + rem;
+$font-size-21: math.div(21, $font-size-number) + rem;
+$font-size-22: math.div(22, $font-size-number) + rem;
+$font-size-23: math.div(23, $font-size-number) + rem;
+$font-size-24: math.div(24, $font-size-number) + rem;
+$font-size-25: math.div(25, $font-size-number) + rem;
+$font-size-26: math.div(26, $font-size-number) + rem;
+$font-size-27: math.div(27, $font-size-number) + rem;
+$font-size-28: math.div(28, $font-size-number) + rem;
+$font-size-29: math.div(29, $font-size-number) + rem;
+$font-size-30: math.div(30, $font-size-number) + rem;
+$font-size-35: math.div(35, $font-size-number) + rem;
+$font-size-40: math.div(40, $font-size-number) + rem;
+$font-size-41: math.div(41, $font-size-number) + rem;
+$font-size-42: math.div(42, $font-size-number) + rem;
+$font-size-43: math.div(43, $font-size-number) + rem;
+$font-size-44: math.div(44, $font-size-number) + rem;
+$font-size-45: math.div(45, $font-size-number) + rem;
+$font-size-50: math.div(50, $font-size-number) + rem;
+$font-size-55: math.div(55, $font-size-number) + rem;
+$font-size-60: math.div(60, $font-size-number) + rem;
+$font-size-65: math.div(65, $font-size-number) + rem;
+$font-size-70: math.div(70, $font-size-number) + rem;
+
+$transition: all .2s ease;
+
+$topbar-height: 60px;
+$sidebar-width: 270px;
+
+$grid-breakpoint-xs-min: 0;
+$grid-breakpoint-sm-min: 576px;
+$grid-breakpoint-md-min: 768px;
+$grid-breakpoint-lg-min: 992px;
+$grid-breakpoint-xl-min: 1200px;
+$grid-breakpoint-xxl-min: 1400px;
+
+$z-index-splashscreen: 1000000;
+
+@mixin keep-aspect-ratio ($size: 100) {
+    &:before {
+        content: "";
+        padding-top: #{$size + '%'};
+        float: left !important;
+    }
+
+    &:after {
+        content: "";
+        display: block !important;
+        clear: both !important;
+    }
+}
+
+@mixin text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// @mixin icon-font($icon: "") {
+//     content: $icon;
+//     font-family: $font-family-icons;
+//     font-size: inherit;
+//     font-style: normal;
+//     font-variant-alternates: normal;
+//     font-variant-caps: normal;
+//     font-variant-east-asian: normal;
+//     font-variant-ligatures: normal;
+//     font-variant-numeric: normal;
+//     font-variant-position: normal;
+//     font-weight: 900;
+// }

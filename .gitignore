@@ -1,0 +1,17 @@
+/node_modules/
+/vendor/
+/style.*
+/script.*
+
+# Configuration
+/.env
+
+# Build
+/build/
+/dist/
+
+# Uploads
+/uploads/
+
+# Log files
+/logs/

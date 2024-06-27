@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.hero-banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eee;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    &-overlay {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    &-content {
+        margin: 0;
+        padding: 150px 16px 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    &-call-in {
+        margin: 0;
+        padding: 4px 16px;
+        // background-color: rgba(255, 255, 255, .9);
+        color: rgba(255, 255, 255, .9);
+        // box-shadow: 4px 4px 0 0 $color-secondary;
+        border: 2px solid rgba(255, 255, 255, .9);
+        max-width: 720px;
+        font-family: $font-family-body;
+    }
+
+    &-title {
+        margin: 0;
+        padding: 0;
+        color: rgba(255, 255, 255, .9);
+        max-width: 720px;
+        font-family: $font-family-heading;
+    }
+}

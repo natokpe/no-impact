@@ -1,0 +1,20 @@
+{
+    "name": "natokpe/no-impact",
+    "description": "A WordPress theme",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NatOkpe\\Wp\\Theme\\Impact\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nat Okpe",
+            "email": "info@nat.com.ng"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    }
+}
