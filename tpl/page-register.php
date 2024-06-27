@@ -178,7 +178,7 @@ while (have_posts()): the_post();
 
                                 <div class="mb-3">
                                     <label for="user-password" class="form-label">Password</label>
-                                    <div class="form-control-password">
+                                    <div class="form-container form-container-password">
                                         <input type="password"
                                             id="user-password"
                                             class="form-control"
@@ -187,8 +187,8 @@ while (have_posts()): the_post();
                                             name="password"
                                             value="<?= $form['password'] ?>"
                                         />
-                                        <div class="form-control-password-toggle">
-                                            <i class="icon feather icon-eye-off"></i>
+                                        <div class="form-container-password-toggle">
+                                            <i class="icon feather icon-eye"></i>
                                         </div>
                                     </div>
 
@@ -203,14 +203,20 @@ while (have_posts()): the_post();
 
                                 <div class="mb-3">
                                     <label for="user-vpassword" class="form-label">Verify password</label>
-                                    <input type="password"
-                                        class="form-control"
-                                        id="user-vpassword"
-                                        name="vpassword"
-                                        aria-describedby="user-vpassword-help"
-                                        value="<?= $form['vpassword'] ?>" 
-                                        placeholder="Retype password"
-                                    />
+                                    <div class="form-container form-container-password">
+                                        <input type="password"
+                                            class="form-control"
+                                            id="user-vpassword"
+                                            name="vpassword"
+                                            aria-describedby="user-vpassword-help"
+                                            value="<?= $form['vpassword'] ?>" 
+                                            placeholder="Retype password"
+                                        />
+                                        <div class="form-container-password-toggle">
+                                            <i class="icon feather icon-eye"></i>
+                                        </div>
+                                    </div>
+
                                     <div id="user-vpassword-help" class="form-text">
                                         <?php if (! empty($screen_errors['vpassword'] ?? '')): ?>
                                         <div class="text-danger mb-1"><?= $screen_errors['vpassword'] ?></div>

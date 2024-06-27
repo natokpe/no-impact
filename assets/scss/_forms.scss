@@ -32,6 +32,49 @@
     }
 }
 
+.form-container {
+    &-password {
+        position: relative;
+
+        .form-control {
+            padding: 7px 15px {
+                right: 38px;
+            };
+        }
+
+        &-toggle {
+            margin: 0;
+            padding: 0 10px;
+            background-color: transparent;
+            display: inline-flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: auto;
+            pointer-events: none;
+
+            .icon {
+                font-size: $font-size-18;
+                color: #93979b;
+                transition: $transition;
+                opacity: 1;
+                pointer-events: all;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-black;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
 .form-check-input {
     cursor: pointer;
     transition: $transition;

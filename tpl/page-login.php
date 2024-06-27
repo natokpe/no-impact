@@ -115,14 +115,20 @@ get_header();
                                         </div>
                                     </div>
 
-                                    <input type="password"
-                                        id="user-password"
-                                        class="form-control"
-                                        aria-describedby="user-password-help"
-                                        placeholder=""
-                                        name="pwd"
-                                        value="<?= $form['password'] ?>" 
-                                    />
+                                    <div class="form-container form-container-password">
+                                        <input type="password"
+                                            id="user-password"
+                                            class="form-control"
+                                            aria-describedby="user-password-help"
+                                            placeholder=""
+                                            name="pwd"
+                                            value="<?= $form['password'] ?>" 
+                                        />
+                                        <div class="form-container-password-toggle">
+                                            <i class="icon feather icon-eye"></i>
+                                        </div>
+                                    </div>
+
                                     <!-- <div id="user-password-help" class="form-textxxx mt-1"></div> -->
                                 </div>
 

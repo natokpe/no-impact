@@ -100,26 +100,37 @@ while (have_posts()): the_post();
                         <form method="POST" action="<?= Theme::urlNow() ?>">
                             <div class="mb-3">
                                 <label for="user-password" class="form-label">New password</label>
-                                <input type="password"
-                                    id="user-password"
-                                    class="form-control"
-                                    aria-describedby="user-password-help"
-                                    placeholder="Choose a password"
-                                    name="pwd"
-                                    value="<?= $form['password'] ?>" 
-                                />
+                                <div class="form-container form-container-password">
+                                    <input type="password"
+                                        id="user-password"
+                                        class="form-control"
+                                        aria-describedby="user-password-help"
+                                        placeholder="Choose a password"
+                                        name="pwd"
+                                        value="<?= $form['password'] ?>" 
+                                    />
+                                    <div class="form-container-password-toggle">
+                                        <i class="icon feather icon-eye"></i>
+                                    </div>
+                                </div>
+
                                 <div id="user-password-help" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="user-vpassword" class="form-label">Verify password</label>
-                                <input type="password"
-                                    class="form-control"
-                                    id="user-vpassword"
-                                    name="vpwd"
-                                    placeholder="Retype password"
-                                    value="<?= $form['vpassword'] ?>"
-                                />
+                                <div class="form-container form-container-password">
+                                    <input type="password"
+                                        class="form-control"
+                                        id="user-vpassword"
+                                        name="vpwd"
+                                        placeholder="Retype password"
+                                        value="<?= $form['vpassword'] ?>"
+                                    />
+                                    <div class="form-container-password-toggle">
+                                        <i class="icon feather icon-eye"></i>
+                                    </div>
+                                </div>
                             </div>
 
                             <input type="hidden"
